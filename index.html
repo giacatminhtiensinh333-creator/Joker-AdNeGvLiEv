@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joker Armageddon</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1>Joker Armageddon (7 người chơi)</h1>
+        <div class="controls">
+          <button id="startBtn">Bắt đầu ván mới</button>
+        </div>
+      </header>
+
+      <section id="statusPanel" class="status-panel">
+        <p id="phaseText">Nhấn "Bắt đầu ván mới" để chơi.</p>
+        <p id="turnText"></p>
+      </section>
+
+      <section id="table" class="table">
+        <div id="seatContainer" class="seat-container"></div>
+        <div id="animationLayer" class="animation-layer"></div>
+      </section>
+
+      <section class="human-area">
+        <h2>Bài của bạn</h2>
+        <div id="humanHand" class="human-hand"></div>
+      </section>
+
+      <section class="log-area">
+        <h2>Nhật ký</h2>
+        <div id="log" class="log"></div>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
